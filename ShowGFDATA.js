@@ -1,8 +1,9 @@
 const showGFData = () => {
     const url = $("#google-form-url").val
+    console.log(url)
     $.ajax({
         type:"GET",
-        url: url
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSfmcP1PYmr4BCJ7tdBN5ZF_5lLUQWdL8ixZ9B5En6EWcjcnjw/viewform"
     }).done(html => {
         //showAction(html.results[0]);
         //showData(html.results[0]);
