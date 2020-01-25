@@ -1,12 +1,11 @@
 const showGFData = () => {
     const url = $("#google-form-url").val
     $.ajax({
-        url: url, 
-        cache: false,
-        success: (html) => {
-            showAction(html);
-            showData(html);
-        }
+        type:"GET",
+        url: url
+    }).done(html => {
+        showAction(html.results[0]);
+        showData(html.results[0]);
     });
 };
 
