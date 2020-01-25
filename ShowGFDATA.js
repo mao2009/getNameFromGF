@@ -15,7 +15,7 @@ function showAction(html){
 }
 
 function showData(html){
-    const elms = $(html).find('class="freebirdFormviewerViewNumberedItemContainer"]');
+    const elms = $(html).find('[class="freebirdFormviewerViewNumberedItemContainer"]');
     elms.each(elm => {
         const title = $(elm).text.match(/.+?\n/)[0].replace("\n","");
         const names = $(elm).text.match(/name="entry\..+?"/g);
