@@ -4,8 +4,8 @@ const showGFData = () => {
         type:"GET",
         url: url
     }).done(html => {
-        showAction(html.results[0]);
-        showData(html.results[0]);
+        //showAction(html.results[0]);
+        //showData(html.results[0]);
     });
 };
 
